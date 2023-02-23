@@ -1,0 +1,25 @@
+$size-s: 40.625em; // 650px
+$size-m: 62.5em; //1000px
+$size-l: 100em; // 1600px
+$size-xl: 145em; // 2320px
+
+@mixin screen-s {
+    @media (min-width: #{$size-s}) {
+        @content;
+    }
+}
+@mixin screen-m {
+    @media (min-width: #{$size-m}) {
+        @content;
+    }
+}
+@mixin screen-l {
+    @media (min-width: #{$size-l}) {
+        @content;
+    }
+}
+@mixin screen-xl {
+    @media (min-width: #{$size-xl}) {
+        @content;
+    }
+}
